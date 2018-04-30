@@ -144,7 +144,7 @@ func (u *UserService) Delete(id string) (User, error) {
 }
 
 func (u *UserService) DeleteWithEmail(email string) (User, error) {
-	return u.Reposityr.deleteWithEmail(email)
+	return u.Repository.deleteWithEmail(email)
 }
 
 // Get the address for an User in order to message them
